@@ -43,6 +43,9 @@ function gerarResultados() {
     // Resetar o número de dracmas e quantidade de números
     document.getElementById("nroDracmas").textContent = "0";
     document.getElementById("quantidadeNumeros").textContent = "0";
+    document.getElementById("quantidadeQuatroEstrelas").textContent = "0";
+    document.getElementById("quantidadeTresEstrelas").textContent = "0";
+    document.getElementById("quantidadeJackspot").textContent = "0";
     return; // Encerrar a função
   }
 
@@ -51,13 +54,18 @@ function gerarResultados() {
 
   var tableBody = document.getElementById("resultsTableBody");
   var nroDracmas = 0;
+  var jackspot = 24;
 
   // Limpar tabela antes de gerar os novos resultados
   tableBody.innerHTML = "";
+  var qtdCincoEstrelas = 0; // Inicializa o contador como 0
 
   numbers.forEach(function(number) {
     var row = document.createElement("tr");
-
+    if (number == jackspot) {
+      console.log("oi");
+      qtdCincoEstrelas++; 
+    }
     var resultCell = document.createElement("td");
     if (bannerSelecionado.hasOwnProperty(number)) {
       resultCell.textContent = number + " - " + bannerSelecionado[number];
@@ -68,8 +76,16 @@ function gerarResultados() {
     }
   });
 
+
+
+
+
+  
   document.getElementById("nroDracmas").textContent = nroDracmas * premioDracmas;
+  document.getElementById("quantidadeQuatroEstrelas").textContent =  numbers.length - nroDracmas - qtdCincoEstrelas;
+  document.getElementById("quantidadeTresEstrelas").textContent = nroDracmas;
   document.getElementById("quantidadeNumeros").textContent = numbers.length;
+  document.getElementById("quantidadeJackspot").textContent = qtdCincoEstrelas;
 }
 
 // Aguardar o documento ser carregado
