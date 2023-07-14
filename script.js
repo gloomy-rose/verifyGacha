@@ -15,6 +15,8 @@ var banner1 = {
 };
 
 var banner2 = {
+  24: "Jackspot: Role 1d100",
+  11: "350xp",
   22: "05 Pontos de Mérito",
   33: "Mida’s Blessing 100% (5 turnos)",
   44: "Athena’s Blessing 100% (5 turnos)",
