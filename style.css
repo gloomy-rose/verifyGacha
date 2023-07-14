@@ -43,6 +43,22 @@
 	background: linear-gradient(to right, var(--corFonte), var(--corDestaque));
 	cursor: pointer;
 }
+
+#gachapon button.gerarResultado:active, #gachapon button.copiarResultado:active {
+    background: #c3a34e;
+    box-shadow: 0 5px #c3a34e;
+    transform: translateY(4px);
+}
+
+#gachapon button.gerarResultado:hover, #gachapon button.copiarResultado:hover  {
+    background: #000814;
+}
+#gachapon hr  {
+	margin-top: 30px;
+    border-color: var(--corDestaque);
+}
+
+
 #gachapon button.copiarResultado
 {
  	padding: 10px;
