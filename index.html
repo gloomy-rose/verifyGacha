@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gachapon</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+</head>
+
+<body id="gachapon">
+  <div class="bodyGacha">
+
+    <div class="formularioResultados">
+      <div class="bannerSelect">
+        <label for="bannerSelectInput">Selecione o Banner:</label><br>
+        <select id="bannerSelectInput">
+          <option value="banner1">Banner 1</option>
+          <option value="banner2">Banner 2</option>
+        </select>
+      </div>
+      <label for="numerosSorteadosInput">Números Sorteados:</label><br>
+      <input type="text" id="numerosSorteadosInput">
+      <button class="gerarResultado" onclick="gerarResultados()">Enviar</button>
+    </div>
+
+
+    <div id="totalDeGanhos">
+      <span class="titleResult">Resultados:</span>
+      <table>
+        <tbody id="resultsTableBody">
+        </tbody>
+      </table>
+
+      <b>Dracmas:</b> <span id="nroDracmas">0</span><br>
+    </div>
+
+
+    <b>Total de Números:</b> <span id="quantidadeNumeros">0</span><br>
+    <button class="copiarResultado" onclick="copiarResultado()">Copiar Resultado</button>
+
+
+
+  </div>
+  <div class="rodape"> Feito por GLOOMY&ChatGPT para o RPG Arcane® | Atualizado em: 14/07/2023.</div>
+
+
+</body>
+
+</html>

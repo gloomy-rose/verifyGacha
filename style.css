@@ -1,0 +1,72 @@
+:root {
+  --corBackground: #091423;
+  --corFonte: #b3a88a;
+  --corDestaque: #cda23b;
+  --fontPrincipal: Consolas;
+  --fontDestaque: Consolas;
+}
+#gachapon {
+    background: var(--corBackground);
+    font-family: var(--fontPrincipal);
+    color: var(--corFonte);
+    /* padding: 61px; */
+
+}
+#gachapon div.bodyGacha{
+      border: 4px solid var(--corDestaque);
+    padding: 71px;
+}
+#gachapon span.titleResult
+{
+  font-weight:bold;
+  color: var(--corDestaque);
+  text-transform:uppercase;
+}
+
+#gachapon input, select {
+  	width: 40%;
+	margin: 0 auto;
+	padding: 10px;
+	border: none;
+	margin-bottom: 10px;
+	border-radius: 50px;
+}
+#gachapon button.gerarResultado{
+ 	padding: 10px;
+	width: 10%;
+	margin: 0 auto;
+	border-radius: 50px;
+	border: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+	background: linear-gradient(to right, var(--corFonte), var(--corDestaque));
+	cursor: pointer;
+}
+#gachapon button.copiarResultado
+{
+ 	padding: 10px;
+	width: 200px;
+	margin: 0 auto;
+	border-radius: 50px;
+	border: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+	background: linear-gradient(to right, var(--corFonte), var(--corDestaque));
+	cursor: pointer;
+}
+#gachapon div.formularioResultados label{
+  text-transform:uppercase;
+  font-size: 15px; 
+  font-family: var(--fontDestaque);
+  color: var(--corDestaque);
+}
+
+div.rodape
+{
+    background: #000814;
+    padding: 13px;
+    text-align: center;
+    border: 4px solid var(--corDestaque);
+}
