@@ -1,4 +1,3 @@
-
 var banner1 = {
   24: "Jackspot: Role 1d100",
   11: "Resetador de Atributo",
@@ -71,15 +70,18 @@ function gerarResultados() {
   document.getElementById("quantidadeNumeros").textContent = numbers.length;
 }
 
-var bannerSelectInput = document.getElementById("bannerSelectInput");
-bannerSelectInput.addEventListener("change", function() {
-  if (this.value === "banner1") {
-    bannerSelecionado = banner1;
-  } else if (this.value === "banner2") {
-    bannerSelecionado = banner2;
-  }
+// Aguardar o documento ser carregado
+document.addEventListener("DOMContentLoaded", function() {
+  // Obtém a referência ao elemento bannerSelectInput
+  var bannerSelectInput = document.getElementById("bannerSelectInput");
+  bannerSelectInput.addEventListener("change", function() {
+    if (this.value === "banner1") {
+      bannerSelecionado = banner1;
+    } else if (this.value === "banner2") {
+      bannerSelecionado = banner2;
+    }
+  });
 });
-
 
 function copiarResultado() {
   var resultadoDiv = document.getElementById("totalDeGanhos");
