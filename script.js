@@ -1,5 +1,5 @@
 var banner1 = {
-  24: "Jackspot: Role 1d100",
+  42: "Jackspot: Role 1d100",
   11: "Resetador de Atributo",
   22: "Transformador de Runa S",
   33: "350exp",
@@ -15,19 +15,19 @@ var banner1 = {
 };
 
 var banner2 = {
-  24: "Jackspot: Role 1d100",
-  11: "350xp",
-  22: "05 Pontos de Mérito",
+  42: "Jackspot: Role 1d100",
+  11: "350exp",
+  22: "1 nível do passe de batalha",
   33: "Mida’s Blessing 100% (5 turnos)",
   44: "Athena’s Blessing 100% (5 turnos)",
   55: "Ares’s Blessing 10% (5 turnos)",
   66: "Hekate’s Blessing 10% (5 turnos)",
   77: "350exp",
-  88: "05 Pontos de Mérito",
+  88: "1 nível do passe de batalha",
   99: "Mida’s Blessing 100% (5 turnos)",
   100: "Athena’s Blessing 100% (5 turnos)",
   111: "Ares’s Blessing 10% (5 turnos)",
-  122: "Hekate’s Blessing 10% (5 turnos)"
+  122: "Hekate’s Blessing 10% (5 turnos)",
 };
 
 var bannerSelecionado = banner1;
