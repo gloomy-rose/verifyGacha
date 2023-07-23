@@ -54,7 +54,7 @@ function gerarResultados() {
 
   var tableBody = document.getElementById("resultsTableBody");
   var nroDracmas = 0;
-  var jackspot = 24;
+  var jackspot = 42;
 
   // Limpar tabela antes de gerar os novos resultados
   tableBody.innerHTML = "";
