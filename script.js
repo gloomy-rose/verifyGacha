@@ -1,21 +1,21 @@
 var banner1 = {
-  42: "Jackspot: Role 1d100",
+  26: "Jackspot: Role 1d100",
   11: "Resetador de Atributo",
-  22: "Transformador de Runa S",
+  22: "6 Runas A",
   33: "350exp",
-  44: "20 Pedras de energia condensada",
-  55: "1 equipamento Delphinad",
-  66: "3 runas tier A",
+  44: "10kg material + 20 Pedras de energia condensada",
+  55: "1 Artefato A",
+  66: "3 Artefato B",
   77: "Resetador de Atributo",
-  88: "Transformador de Runa S",
+  88: "1 Artefato A",
   99: "350exp",
-  100: "20 Pedras de energia condensada",
-  111: "1 equipamento Delphinad",
-  122: "3 runas tier A"
+  100: "10kg material + 20 Pedras de energia condensada",
+  111: "6 Runas A",
+  122: "3 Artefato B"
 };
 
 var banner2 = {
-  42: "Jackspot: Role 1d100",
+  26: "Jackspot: Role 1d100",
   11: "350exp",
   22: "1 nível do passe de batalha",
   33: "Mida’s Blessing 100% (5 turnos)",
@@ -54,7 +54,7 @@ function gerarResultados() {
 
   var tableBody = document.getElementById("resultsTableBody");
   var nroDracmas = 0;
-  var jackspot = 42;
+  var jackspot = 26;
 
   // Limpar tabela antes de gerar os novos resultados
   tableBody.innerHTML = "";
@@ -63,7 +63,6 @@ function gerarResultados() {
   numbers.forEach(function(number) {
     var row = document.createElement("tr");
     if (number == jackspot) {
-      console.log("oi");
       qtdCincoEstrelas++; 
     }
     var resultCell = document.createElement("td");
