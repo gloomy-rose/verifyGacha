@@ -32,6 +32,28 @@ var banner2 = {
 
 var bannerSelecionado = banner1;
 
+function ultimaOcorrencia(numero, string) {
+  // Remove espaços extras no início e no final da string e divide usando múltiplos espaços como delimitador
+  const partes = string.trim().split(/\s+/);
+  
+  let ultimaPosicao = -1;
+  
+  // Percorre as partes para encontrar a última ocorrência do número desejado
+  for (let i = 0; i < partes.length; i++) {
+      // Converte a parte para um número inteiro
+      const parteNumero = parseInt(partes[i]);
+      
+      // Verifica se a parte é igual ao número desejado e atualiza a última posição
+      if (parteNumero === numero) {
+          ultimaPosicao = i;
+      }
+  }
+  
+  // Retorna a última posição encontrada (ou -1 se não houver ocorrência)
+  return ultimaPosicao + 1;
+}
+
+
 function gerarResultados() {
   var numerosSorteadosInput = document.getElementById("numerosSorteadosInput");
   var numerosSorteadosDiscord = numerosSorteadosInput.value.trim();
@@ -46,6 +68,7 @@ function gerarResultados() {
     document.getElementById("quantidadeQuatroEstrelas").textContent = "0";
     document.getElementById("quantidadeTresEstrelas").textContent = "0";
     document.getElementById("quantidadeJackspot").textContent = "0";
+    document.getElementById("ultimaOcorrenciaJackspot").textContent = "0";
     return; // Encerrar a função
   }
 
@@ -75,16 +98,12 @@ function gerarResultados() {
     }
   });
 
-
-
-
-
-  
   document.getElementById("nroDracmas").textContent = nroDracmas * premioDracmas;
   document.getElementById("quantidadeQuatroEstrelas").textContent =  numbers.length - nroDracmas - qtdCincoEstrelas;
   document.getElementById("quantidadeTresEstrelas").textContent = nroDracmas;
   document.getElementById("quantidadeNumeros").textContent = numbers.length;
   document.getElementById("quantidadeJackspot").textContent = qtdCincoEstrelas;
+  document.getElementById("ultimaOcorrenciaJackspot").textContent = ultimaOcorrencia(jackspot , numerosSorteadosDiscord);
 }
 
 // Aguardar o documento ser carregado
