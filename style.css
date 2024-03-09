@@ -1,47 +1,94 @@
 :root {
-  --corBackground: #091423;
-  --corFonte: #b3a88a;
-  --corDestaque: #cda23b;
+  --corBackground: #1F2041;
+  --corFonte: #0b0d4f;
+  --corDestaque: #1F2041;
+  --corClara: #F1E3E4;
   --fontPrincipal: Consolas;
   --fontDestaque: Consolas;
 }
 #gachapon {
-    background: var(--corBackground);
+    background-color: var(--corBackground);
+    background-image: url('wallpaper.jpg') ;
     font-family: var(--fontPrincipal);
     color: var(--corFonte);
-    /* padding: 61px; */
+    padding: 1%;
 
 }
 #gachapon div.bodyGacha{
-      border: 4px solid var(--corDestaque);
+    border: 10px solid var(--corDestaque);
     padding: 71px;
+    background-color: #F1E3E4;
+    border-radius: 10px;
+    border-bottom: none;
+    margin-bottom: -10px;
 }
-#gachapon span.titleResult
+
+#descricaoSiteGacha {
+  color:#000814;
+  font-size: 15px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+div.bannerGacha {
+  background-clip: cover;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+#gachapon div.titleResult
 {
   font-weight:bold;
-  color: var(--corDestaque);
-  text-transform:uppercase;
+  color: var(--corClara);
+  text-transform:uppercase; 
+  background: var(--corDestaque);
+  padding: 10px;
+  margin-top: 32px;
+
+}
+
+textarea#numerosSorteadosInput{
+  border: #000814 2px solid;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+}
+
+#gachapon #totalDeGanhos {
+  height: 100px;
+  overflow-y: scroll;
+  border: 1px solid;
+  padding: 13px 0px
 }
 
 #gachapon input, select {
-  	width: 40%;
+  width: 40%;
 	margin: 0 auto;
 	padding: 10px;
 	border: none;
 	margin-bottom: 10px;
 	border-radius: 50px;
 }
+#gachapon  label {
+  font-weight: bold;
+}
+
 #gachapon button.gerarResultado{
- 	padding: 10px;
-	width: 10%;
+ 	padding: 10px 15px;
 	margin: 0 auto;
-	border-radius: 50px;
+	border-radius: 8px;
 	border: none;
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #fff;
 	background: linear-gradient(to right, var(--corFonte), var(--corDestaque));
 	cursor: pointer;
+  width: 200px;
 }
 
 #gachapon button.gerarResultado:active, #gachapon button.copiarResultado:active {
@@ -64,7 +111,7 @@
  	padding: 10px;
 	width: 200px;
 	margin: 0 auto;
-	border-radius: 50px;
+	border-radius: 8px;
 	border: none;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -81,8 +128,58 @@
 
 div.rodape
 {
+    color: #CCBCBC;
     background: #000814;
     padding: 13px;
     text-align: center;
     border: 4px solid var(--corDestaque);
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  #descricaoSiteGacha {
+    color:#000814;
+    font-size: 15px;
+    margin-bottom: 15px;
+    text-align: justify;
+    display: none;
+  }
+  
+  textarea#numerosSorteadosInput {
+    border: #000814 2px solid;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+  }
+  #gachapon button.gerarResultado{
+   padding: 10px 15px;
+   margin: 0 auto;
+   border-radius: 8px;
+   border: none;
+   text-transform: uppercase;
+   font-weight: 700;
+   color: #fff;
+   background: linear-gradient(to right, var(--corFonte), var(--corDestaque));
+   cursor: pointer;
+   width: 100%;
+ }
+
+
+ #gachapon input, select {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 50px;
+}
+#gachapon input, select {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 50px;
+}
 }
