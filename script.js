@@ -1,33 +1,33 @@
 var banner1 = {
-  26: "Jackspot: Role 1d100",
-  11: "Resetador de Atributo",
-  22: "6 Runas A",
-  33: "350exp",
-  44: "10kg material + 20 Pedras de energia condensada",
-  55: "1 Artefato A",
-  66: "3 Artefato B",
-  77: "Resetador de Atributo",
-  88: "1 Artefato A",
-  99: "350exp",
+  78: "Jackspot: Role 1d100",
+  11: "20 Éter",
+  22: "350 exp",
+  33: "6 Runas A",
+  44: "Resetador de Atributo",
+  55: "10kg material + 20 Pedras de energia condensada",
+  66: "20 Éter",
+  77: "350 exp",
+  88: "6 Runas A",
+  99: "Resetador de Atributo",
   100: "10kg material + 20 Pedras de energia condensada",
-  111: "6 Runas A",
-  122: "3 Artefato B"
+  111: "20 Éter",
+  122: "350 exp"
 };
 
 var banner2 = {
-  26: "Jackspot: Role 1d100",
-  11: "350exp",
-  22: "1 nível do passe de batalha",
+  78: "Jackspot: Role 1d100",
+  11: "350 exp",
+  22: "1 nível no passe de batalha",
   33: "Mida’s Blessing 100% (5 turnos)",
   44: "Athena’s Blessing 100% (5 turnos)",
-  55: "Ares’s Blessing 10% (5 turnos)",
-  66: "Hekate’s Blessing 10% (5 turnos)",
-  77: "350exp",
-  88: "1 nível do passe de batalha",
-  99: "Mida’s Blessing 100% (5 turnos)",
-  100: "Athena’s Blessing 100% (5 turnos)",
-  111: "Ares’s Blessing 10% (5 turnos)",
-  122: "Hekate’s Blessing 10% (5 turnos)",
+  55: "350 exp",
+  66: "1 nível no passe de batalha",
+  77: "Mida’s Blessing 100% (5 turnos)",
+  88: "Athena’s Blessing 100% (5 turnos)",
+  99: "350 exp",
+  100: "1 nível no passe de batalha",
+  111: "Mida’s Blessing 100% (5 turnos)",
+  122: "Athena’s Blessing 100% (5 turnos)",
 };
 
 var bannerSelecionado = banner1;
@@ -77,7 +77,7 @@ function gerarResultados() {
 
   var tableBody = document.getElementById("resultsTableBody");
   var nroDracmas = 0;
-  var jackspot = 26;
+  var jackspot = 78;
 
   // Limpar tabela antes de gerar os novos resultados
   tableBody.innerHTML = "";
