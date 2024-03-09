@@ -6,12 +6,20 @@
   <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="https://i.postimg.cc/JhVm8t0f/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
 </head>
 
 <body id="gachapon">
-  <div class="bodyGacha">
 
+  <div class="bodyGacha">
+    <div class="bannerGacha">
+      GACHAPON
+    </div>
+    <div id="descricaoSiteGacha">
+      Para usar basta selecionar o banner e copiar todos os numeros da rolagem e jogar no campo "NUMEROS SORTEADOS". Lembre-se o banner selecionado tem que ser de acordo com o canal onde você rolou. Ao final, você poderá copiar o resultado e jogar diretamente nas atualizações com o link da rolagem.
+      <br><B>Atenção!</B> Esse site foi criado com o intuito de auxiliar na hora de contabilizar os ganhos no gachapon e não substitui a leitura do documento oficial. Sugestões de funcionalidades são sempre bem vindas.  
+    </div>
     <div class="formularioResultados">
       <div class="bannerSelect">
         <label for="bannerSelectInput">Selecione o Banner:</label><br>
@@ -21,13 +29,13 @@
         </select>
       </div>
       <label for="numerosSorteadosInput">Números Sorteados:</label><br>
-      <input type="text" id="numerosSorteadosInput">
+      <input type="text" id="numerosSorteadosInput"> <br>
       <button class="gerarResultado" onclick="gerarResultados()">Enviar</button>
     </div>
 
 
+    <div class="titleResult">Resultados:</div>
     <div id="totalDeGanhos">
-      <span class="titleResult">Resultados:</span>
       <table>
         <tbody id="resultsTableBody">
         </tbody>
@@ -35,7 +43,8 @@
 
       <b>Dracmas:</b> <span id="nroDracmas">0</span><br>
     </div>
-    <br><br>
+<br>
+    <div id="resumoContagem"></div>
     <button class="copiarResultado" onclick="copiarResultado()">Copiar Resultado</button>
     <hr>
 
@@ -47,7 +56,7 @@
 
 
   </div>
-  <div class="rodape"> Feito por GLOOMY&ChatGPT para o RPG Arcane® | Atualizado em: 03/10/2023.</div>
+  <div class="rodape"> Feito por GLOOMY para o RPG Arcane® | Atualizado em: 09/03/2024.</div>
 
 
 </body>
